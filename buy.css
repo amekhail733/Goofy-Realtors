@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Mulish', sans-serif;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body{
+    background-color: rgb(209, 209, 209);
+}
+/* Main */
+main{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+#houseContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    text-align: center;
+}
+.imgCont{
+    display: grid;
+    border:3px solid black;
+    justify-content: center;
+}
+#houseImg{
+    width: 600px;
+    height: auto;
+}
+/* Footer */
+footer{
+    margin-top:10px;
+    border:2px solid black;
+    background-color: grey;
+    width:100vw;
+    height:10vw;
+    text-align: center;
+}
+/* Responsive */
+@media(max-width:800px){
+    #houseContainer{
+        width: 100vw;
+    }
+    #houseImg{
+        width: 300px;
+        height: auto;
+    }
+    footer{
+        padding:10px;
+        font-size: smaller;
+        height: 10vh;
+    }
+}
